@@ -16,7 +16,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
-import Layout from "./components/Layout/layout";
+import Layout from "./components/Layout/Layout";
 import { CountryListPage } from "./pages/CountryListPage";
 import ContributeCountryPage from "./pages/ContributeCountryPage";
 import DetailCountryPage from "./pages/DetailCountryPage";
