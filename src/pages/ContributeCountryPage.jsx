@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { DeleteCountry } from "../redux/slice/countrySlice";
+import { DeleteCountry } from "../redux/slice/CountrySlice";
 import { Link } from "react-router-dom";
 
 const ContributeCountryPage = () => {
