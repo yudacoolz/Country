@@ -3,7 +3,7 @@ import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { AddCountry } from "../redux/slice/countrySlice";
+import { AddCountry } from "../redux/slice/CountrySlice";
 import { useSelector } from "react-redux";
 
 export const DetailCountryPage = () => {
