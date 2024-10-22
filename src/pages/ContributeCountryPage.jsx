@@ -35,6 +35,14 @@ const ContributeCountryPage = () => {
 
   console.log("country coop", country);
 
+  const handleButton = (id) => {
+    dispatch(DeleteCountry(id));
+
+    // Update ke local state
+    const updatedCountry = country.filter((item) => item.id !== id);
+    setCountry(updatedCountry);
+  };
+
   return (
     <div>
       <div className="relative">
@@ -73,7 +81,8 @@ const ContributeCountryPage = () => {
                 <div className="mt-4">
                   <button
                     className="bg-red-600 p-2 text-white rounded-lg whitespace-nowrap"
-                    onClick={() => dispatch(DeleteCountry(item.name.common))}
+                    // onClick={() => dispatch(DeleteCountry(item.name.common))}
+                    onClick={() => handleButton(item.name.common)}
                   >
                     Cancel Coop
                   </button>
