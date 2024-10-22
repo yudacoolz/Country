@@ -31,7 +31,7 @@ const ContributeCountryPage = () => {
     };
 
     fetchCountrys();
-  }, [contributeCountry]);
+  }, [contributeCountry, country]);
 
   console.log("country coop", country);
 
