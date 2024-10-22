@@ -31,15 +31,15 @@ const ContributeCountryPage = () => {
     };
 
     fetchCountrys();
-  }, [contributeCountry, country]);
+  }, [contributeCountry]);
 
   console.log("country coop", country);
 
-  const handleButton = (id) => {
-    dispatch(DeleteCountry(id));
+  const handleButton = (name) => {
+    dispatch(DeleteCountry(name));
 
     // Update ke local state
-    const updatedCountry = country.filter((item) => item.id !== id);
+    const updatedCountry = country.filter((item) => item.name.common !== name);
     setCountry(updatedCountry);
   };
 
